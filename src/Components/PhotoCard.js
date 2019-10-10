@@ -31,8 +31,7 @@ const PhotoCard = props => {
         Explanation: {props.imgExplanation} </CardExplanation>
          <Alert color="info">  <Date> Date: {props.imgDate} </Date></Alert> 
         </CardBody>  
-      
-{/* <UncontrolledButtonDropdown>     
+ <UncontrolledButtonDropdown>     
   <DropdownToggle caret>
         Read More
   </DropdownToggle>
@@ -45,7 +44,7 @@ const PhotoCard = props => {
         </CardBody>  
       </DropdownItem>
     </DropdownMenu>
-</UncontrolledButtonDropdown> */}
+</UncontrolledButtonDropdown> 
 
           {/* Explanation: {props.imgExplanation} </CardExplanation>
          <Alert color="info">  <Date> Date: {props.imgDate} </Date></Alert> 
@@ -101,7 +100,15 @@ line:1.2;
 }`
 
 const Date = styled.h6 `
-color: ${props => (props.seconday ? 'red' : 'black')}`
+color: ${props => (props.seconday ? 'red' : 'black')}
+
+&:hover {
+  background: ${props => (props.secondary? "#2a2223" : "#fff")};
+  color: ${props => (props.secondary ? "#fff" : "#2a2223")};
+  border: ${props =>
+    props.secondary? "2px solid #2a2223" : "2px solid #99f3eb"};
+}`
+
 
 
 
