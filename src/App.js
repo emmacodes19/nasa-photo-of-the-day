@@ -14,9 +14,7 @@ function App() {
         app! Have fun 🚀!
       </p> */}
       
-        <div>
-            <h1> Photo of the Day</h1>
-        </div>
+       
 
       
     </div>

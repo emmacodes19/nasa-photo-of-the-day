@@ -25,8 +25,8 @@ export default function PhotoList() {
 
               <PhotoCard
                 imgUrl={photo.hdurl}
-                title={photo.title}
-                explanation={photo.explanation}
+                imgTitle={photo.title}
+                imgExplanation={photo.explanation}
 
               />
 
